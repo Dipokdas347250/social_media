@@ -1,2 +1,24 @@
 @import "tailwindcss";
 
+
+:root {
+  --primary: #615DFA;
+  --secondary: #23D2E2;
+  --tertiary: #AFB0C0;
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  --font-poppins: "Poppins", sans-serif;
+
+
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-tertiary: var(--color-tertiary);
+}
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+
+}
