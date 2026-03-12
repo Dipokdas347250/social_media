@@ -7,9 +7,22 @@ const RootLayout = () => {
   return (
     <>
     <Navber/>
-    <Sideber/>
-    <RoundBer/>
-    <Outlet/>
+    
+  
+   
+    <div className="flex justify-between">
+      <div className="min-w-[20%] ">
+
+      <Sideber/>
+      </div>
+      <div className="w-full p-7.5">
+
+       <Outlet/>
+      </div>
+      <div className=" min-w-[5%]">
+          <RoundBer/>
+      </div>
+    </div>
     </>
   )
 }
