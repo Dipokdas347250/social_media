@@ -1,8 +1,14 @@
 import React from 'react'
+import NewsFeedTop from '../home/NewsfeedTop'
+
 
 const NewsAbout = () => {
   return (
-    <div className=' bg-amber-400'>NewsAbout</div>
+    <>
+    <section>
+      <NewsFeedTop/>
+    </section>
+    </>
   )
 }
 
