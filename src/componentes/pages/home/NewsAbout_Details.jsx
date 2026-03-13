@@ -18,6 +18,7 @@ import sad1 from "../../../assets/sad1.png"
 import group from "../../../assets/group.png"
 import comm from "../../../assets/comm.png"
 import wowlike from "../../../assets/wowlike.png"
+import play from "../../../assets/play.png"
 
 
 
@@ -179,6 +180,155 @@ const NewsAbout_Details = () => {
            <input className='w-full outline-none' type="text" placeholder='Your reply ' />
          </div>
 
+        </div>
+      </div>
+      </div>
+
+      <div className="">
+        <div className="py-5 pl-5 pr-10 bg-white rounded-t-[10px] mt-7">
+        <div className="flex items-center gap-6">
+            <img src={ellipse} alt="" />
+            <div className="">
+              <h3 className='text-[14px] text-black font-bold font-poppins'>A B M Shawon Islam</h3>
+              <h4 className='text-[12px] text-tertiary font-medium font-poppins'>29 minutes ago</h4>
+            </div>
+          </div>
+          <div className="">
+          <p className='text-[12px] text-black font-medium font-poppins'>I have great news to share with you all! I’ve been officially made a game streaming verified partner by Streamy http://lyt.ly/snej25. What does this mean? I’ll be uploading new content every day, improving the quality and I’m gonna have access to games a month before the official release. This is a dream come true, thanks to all for the support!!!</p>
+        </div>
+      </div>
+      <div className="  w-full h-100 bg-[#7A77FD] flex justify-center items-center">
+        <img src={play} alt="" />
+      </div>
+       <div className=" flex justify-between items-center mt-7.5 py-4 px-9 border-t border-[#D9D9D9]">
+          <div className="">
+            <div className=" relative ">
+              <div className="w-5 h-5 absolute top-0 left-">
+                <img className=' w-full ' src={like} alt="" />
+              </div>
+              <div className="w-5 h-5 absolute top-0 left-4">
+                <img className='  w-full ' src={love} alt="" />
+              </div>
+              <div className="w-5 h-5 absolute top-0 left-8">
+                <img className='  w-full ' src={wow} alt="" />
+              </div>
+             
+              
+            </div>
+            <h2 className='text-[12px] text-black font-bold font-poppins ml-15'>12</h2>
+          </div>
+          <div className="flex gap-3 items-center">
+            <img src={group} alt="" />
+            <h2 className='text-[12px] text-black font-bold font-poppins'>12 Participants</h2>
+          </div>
+         <div className=" flex gap-4">
+           <h2 className='text-[12px] text-black font-bold font-poppins'>13 Comments</h2>
+          <h2 className='text-[12px] text-black font-bold font-poppins'>2 Shares</h2>
+         </div>
+        </div>
+        <div className="py-6 pl-5 pr-10 bg-[#FCFCFD] border-b border-t border-[#D9D9D9]">
+        <div className="flex justify-between items-center relative">
+          <div className=" group ">
+            <div className="flex items-center gap-4 cursor-pointer">
+            <AiFillLike className='text-[#D9D9D9]'/>
+            <h3 className='text-[12px] text-[#D9D9D9] font-bold font-poppins'>Like</h3>
+          </div>
+          <div className=" bg-white p-3 rounded-full shadow-xl  absolute  hidden group-hover:block bottom-4">
+           <div className="flex gap-2   ">
+            <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={like1} alt="" />
+           <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={love1} alt="" />
+           <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={dislike1} alt="" />
+           <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={happy1} alt="" />
+           <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={funny1} alt="" />
+           <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={wow1} alt="" />
+           <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={angry1} alt="" />
+           <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={sad1} alt="" />
+           </div>
+          </div>
+          </div>
+          <div className="flex items-center gap-4 cursor-pointer">
+            <FaCommentAlt className='text-[#D9D9D9]'/>
+            <h3 className='text-[12px] text-[#D9D9D9] font-bold font-poppins'>Comment</h3>
+          </div>
+          <div className="flex items-center gap-4 cursor-pointer">
+            <FaShareAlt className='text-[#D9D9D9]'/>
+            <h3 className='text-[12px] text-[#D9D9D9] font-bold font-poppins'>Share</h3>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+      <div className="">
+        <div className="py-5 pl-5 pr-10 bg-white rounded-t-[10px] mt-7">
+        <div className="flex items-center gap-6">
+            <img src={ellipse} alt="" />
+            <div className="">
+              <h3 className='text-[14px] text-black font-bold font-poppins'>A B M Shawon Islam</h3>
+              <h4 className='text-[12px] text-tertiary font-medium font-poppins'>29 minutes ago</h4>
+            </div>
+          </div>
+          <div className="">
+          <p className='text-[12px] text-black font-medium font-poppins'>I have great news to share with you all! I’ve been officially made a game streaming verified partner by Streamy http://lyt.ly/snej25. What does this mean? I’ll be uploading new content every day, improving the quality and I’m gonna have access to games a month before the official release. This is a dream come true, thanks to all for the support!!!</p>
+        </div>
+      </div>
+      <div className="  w-full h-100 bg-[#7A77FD] ">
+       
+      </div>
+       <div className=" flex justify-between items-center mt-7.5 py-4 px-9 border-t border-[#D9D9D9]">
+          <div className="">
+            <div className=" relative ">
+              <div className="w-5 h-5 absolute top-0 left-">
+                <img className=' w-full ' src={like} alt="" />
+              </div>
+              <div className="w-5 h-5 absolute top-0 left-4">
+                <img className='  w-full ' src={love} alt="" />
+              </div>
+              <div className="w-5 h-5 absolute top-0 left-8">
+                <img className='  w-full ' src={wow} alt="" />
+              </div>
+             
+              
+            </div>
+            <h2 className='text-[12px] text-black font-bold font-poppins ml-15'>12</h2>
+          </div>
+          <div className="flex gap-3 items-center">
+            <img src={group} alt="" />
+            <h2 className='text-[12px] text-black font-bold font-poppins'>12 Participants</h2>
+          </div>
+         <div className=" flex gap-4">
+           <h2 className='text-[12px] text-black font-bold font-poppins'>13 Comments</h2>
+          <h2 className='text-[12px] text-black font-bold font-poppins'>2 Shares</h2>
+         </div>
+        </div>
+        <div className="py-6 pl-5 pr-10 bg-[#FCFCFD] border-b border-t border-[#D9D9D9]">
+        <div className="flex justify-between items-center relative">
+          <div className=" group ">
+            <div className="flex items-center gap-4 cursor-pointer">
+            <AiFillLike className='text-[#D9D9D9]'/>
+            <h3 className='text-[12px] text-[#D9D9D9] font-bold font-poppins'>Like</h3>
+          </div>
+          <div className=" bg-white p-3 rounded-full shadow-xl  absolute  hidden group-hover:block bottom-4">
+           <div className="flex gap-2   ">
+            <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={like1} alt="" />
+           <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={love1} alt="" />
+           <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={dislike1} alt="" />
+           <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={happy1} alt="" />
+           <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={funny1} alt="" />
+           <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={wow1} alt="" />
+           <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={angry1} alt="" />
+           <img className=' duration-300 ease-in-out hover:scale-130 cursor-pointer' src={sad1} alt="" />
+           </div>
+          </div>
+          </div>
+          <div className="flex items-center gap-4 cursor-pointer">
+            <FaCommentAlt className='text-[#D9D9D9]'/>
+            <h3 className='text-[12px] text-[#D9D9D9] font-bold font-poppins'>Comment</h3>
+          </div>
+          <div className="flex items-center gap-4 cursor-pointer">
+            <FaShareAlt className='text-[#D9D9D9]'/>
+            <h3 className='text-[12px] text-[#D9D9D9] font-bold font-poppins'>Share</h3>
+          </div>
         </div>
       </div>
       </div>
