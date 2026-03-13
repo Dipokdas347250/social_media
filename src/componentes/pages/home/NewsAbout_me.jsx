@@ -10,7 +10,7 @@ import video1 from "../../../assets/video1.png"
 const NewsAbout_me = () => {
   return (
    <>
-   <div className="w-[20%]">
+   <div className="">
    <div className="p-6 bg-white rounded-[10px]">
         <div className="flex justify-between items-center">
             <h3 className='text-[14px] text-[#3E3F5E] font-bold font-poppins '>About me</h3>

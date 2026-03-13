@@ -8,8 +8,12 @@ const Newsfeed = () => {
     <>
      <NewsFeedTop/>
      <div className="flex gap-6 mt-8.5">
-     <NewsAbout_me/>
-      <NewsAbout_Details/>
+     <div className="w-[20%]">
+      <NewsAbout_me/>
+     </div>
+      <div className="w-[55%]">
+        <NewsAbout_Details/>
+      </div>
      </div>
     </>
   )

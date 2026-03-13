@@ -3,6 +3,7 @@ import { RiFacebookBoxFill } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import { Link } from 'react-router';
 
 
 
@@ -16,7 +17,11 @@ const Newsfeed = () => {
 
                         <div className="bg-primary w-38  h-38 mx-auto rounded-full border-6 border-white absolute -bottom-18 left-1/2 -translate-x-1/2  "></div>
                         <div className=" flex gap-4 items-center absolute -bottom-6 right-7">
-                            <button className=' text-[14px] text-white font-semibold font-poppins cursor-pointer px-13 py-3.75 bg-[#615DFA] rounded-[10px] '>Add Friend</button>
+                            <button className=' text-[14px] text-white font-semibold font-poppins cursor-pointer px-13 py-3.75 bg-[#615DFA] rounded-[10px] '>
+                                <Link to="/Add_friend">
+                                Add Friend
+                                </Link>
+                            </button>
                             <button className=' text-[14px] text-white font-semibold font-poppins cursor-pointer px-13 py-3.75 bg-[#23D2E2] rounded-[10px] '>Send Message</button>
                         </div>
 
@@ -46,17 +51,17 @@ const Newsfeed = () => {
 
                             </div>
                             <div className="flex gap-3">
-                                <div className="p-3 bg-[#3763d2] rounded-[10px]">
+                                <div className="p-3 bg-[#3763d2] rounded-[10px] cursor-pointer">
                                     <RiFacebookBoxFill className='text-white text-[20px]' />
                                 </div>
-                                <div className="p-3 bg-[#f8468d] rounded-[10px]">
+                                <div className="p-3 bg-[#f8468d] rounded-[10px] cursor-pointer">
                                     <FaInstagram className='text-white text-[20px]' />
                                 </div>
-                                <div className="p-3 bg-[#1abcff] rounded-[10px]">
-                                    <FaInstagram className='text-white text-[20px]' />
+                                <div className="p-3 bg-[#1abcff] rounded-[10px] cursor-pointer">
+                                    <FaTwitter className='text-white text-[20px]' />
                                 </div>
-                                <div className="p-3 bg-[#fd434f] rounded-[10px]">
-                                    <FaInstagram className='text-white text-[20px]' />
+                                <div className="p-3 bg-[#fd434f] rounded-[10px] cursor-pointer">
+                                    <FaYoutube className='text-white text-[20px]' />
                                 </div>
                             </div>
                         </div>

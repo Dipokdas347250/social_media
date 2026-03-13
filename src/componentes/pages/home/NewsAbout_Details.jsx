@@ -35,7 +35,7 @@ const NewsAbout_Details = () => {
 
   return (
     <>
-    <div className="w-[55%]">
+    <div className="">
       <div className="">
         <div className="py-5 pl-5 pr-10 bg-white rounded-t-[10px]">
         <div className="flex justify-between items-center">
