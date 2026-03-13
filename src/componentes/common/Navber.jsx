@@ -5,6 +5,7 @@ import { BsThreeDots } from "react-icons/bs";
 import { FaShoppingCart, FaSms } from "react-icons/fa";
 import { FaScrewdriverWrench } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
+import { Link } from 'react-router';
 
 
 
@@ -16,12 +17,15 @@ import { IoSearch } from "react-icons/io5";
 const Navber = () => {
     return (
         <>
-            <nav className='py-4  bg-primary pl-6 pr-10 sticky top-0'>
+            <nav className='py-4  bg-primary pl-6 pr-10 sticky top-0  z-50'>
                 <div className="flex justify-between items-center gap-18.25">
                     <div className="w-[38%]">
                         <div className="flex justify-between items-center">
                             <div className="">
+                                <Link to="/">
+                                
                                 <img src={logo} alt="" />
+                                </Link>
                             </div>
                             <div className="">
                                 <ul className='flex justify-between items-center gap-12 text-[14px] text-white font-poppins font-bold  cursor-pointer'>

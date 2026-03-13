@@ -95,10 +95,10 @@ const Sidebar = () => {
         <div className=" pl-10 pr-5 mt-16">
           <ul className=" space-y-1">
             
-            <Link to="/">
+            <Link to="/about">
             <li className="flex items-center gap-7.5 py-4 px-5 rounded-[10px] text-[14px] text-tertiary font-semibold font-poppins bg-white duration-300 ease-in-out hover:bg-[#23D2E2] hover:text-white focus:bg-[#23D2E2] focus:text-white cursor-pointer "><FaNewspaper className="text-[20px]"/> Newsfeed</li>
            </Link>
-            <Link to="/about">
+            <Link to="/">
               <li className="flex items-center gap-7.5 py-4 px-5 rounded-[10px] text-[14px] text-tertiary font-semibold font-poppins bg-white duration-300 ease-in-out hover:bg-[#23D2E2] hover:text-white focus:bg-[#23D2E2] focus:text-white cursor-pointer "><FaGopuram className="text-[20px]" /> Videos</li>
             </Link>
             <li className="flex items-center gap-7.5 py-4 px-5 rounded-[10px] text-[14px] text-tertiary font-semibold font-poppins bg-white duration-300 ease-in-out hover:bg-[#23D2E2] hover:text-white focus:bg-[#23D2E2] focus:text-white cursor-pointer "><FaLayerGroup className="text-[20px]" /> Groups</li>
