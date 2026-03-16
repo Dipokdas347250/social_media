@@ -5,6 +5,7 @@ import pic02 from "../../../assets/pic02.png"
 import pic03 from "../../../assets/pic03.png"
 import video from "../../../assets/video.png"
 import video1 from "../../../assets/video1.png"
+import { Link } from 'react-router';
 
 
 const NewsAbout_me = () => {
@@ -12,11 +13,13 @@ const NewsAbout_me = () => {
    <>
    <div className="">
    <div className="p-6 bg-white rounded-[10px]">
+        <Link to="/About_meRoute">
         <div className="flex justify-between items-center">
             <h3 className='text-[14px] text-[#3E3F5E] font-bold font-poppins '>About me</h3>
             <BsThreeDots className=' cursor-pointer'/>
 
         </div>
+        </Link>
         <p className='text-[12px] text-tertiary font-normal font-poppins mt-7.5'>Hi! My name is A B M Shawon Islam but some people may know me as GameHuntress! I have a Twitch channel where I stream, play and review all the newest games.</p>
         <h4 className='text-[12px] text-tertiary font-bold   font-poppins mt-4.5'>Joined: <span className=' font-normal ml-4'>22 November 2008</span></h4>
         <h4 className='text-[12px] text-tertiary font-bold   font-poppins mt-4.5'>City:   <span className=' font-normal ml-4'>  Dhaka</span></h4>
@@ -40,7 +43,7 @@ const NewsAbout_me = () => {
    </div>
    <div className="p-6 bg-white rounded-[10px] mt-3">
         <div className="flex justify-between items-center">
-            <h3 className='text-[14px] text-[#3E3F5E] font-bold font-poppins '>Photos <span className='text-[#23D2E2]'>37</span></h3>
+            <h3 className='text-[14px] text-[#3E3F5E] font-bold font-poppins '>Videos <span className='text-[#23D2E2]'>7</span></h3>
             <BsThreeDots className=' cursor-pointer'/>
 
         </div>
