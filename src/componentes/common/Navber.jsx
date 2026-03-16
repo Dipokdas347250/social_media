@@ -31,7 +31,10 @@ const Navber = () => {
                                 <ul className='flex justify-between items-center gap-12 text-[14px] text-white font-poppins font-bold  cursor-pointer'>
                                     <li><FaBars /></li>
                                     <li>Careers</li>
+                                    <Link to="/Store">
+                                    
                                     <li>Store</li>
+                                    </Link>
                                     <li>FAQ</li>
                                     <li><BsThreeDots /></li>
 
