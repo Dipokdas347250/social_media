@@ -2,6 +2,7 @@ import React from 'react'
 import NewsAbout_me from '../home/NewsAbout_me'
 import NewsAbout_Details from '../home/NewsAbout_Details'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import "react-tabs/style/react-tabs.css";
 import { FaAlignCenter } from "react-icons/fa";
 import { FaLayerGroup } from "react-icons/fa6";
 import { FaCamera } from "react-icons/fa";
