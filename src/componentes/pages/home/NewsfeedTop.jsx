@@ -17,11 +17,11 @@ const Newsfeed = () => {
 
                         <div className="bg-primary w-38  h-38 mx-auto rounded-full border-6 border-white absolute -bottom-18 left-1/2 -translate-x-1/2  "></div>
                         <div className=" flex gap-4 items-center absolute -bottom-6 right-7">
-                            <button className=' text-[14px] text-white font-semibold font-poppins cursor-pointer px-13 py-3.75 bg-[#615DFA] rounded-[10px] '>
                                 <Link to="/Add_friend">
+                            <button className=' text-[14px] text-white font-semibold font-poppins cursor-pointer px-13 py-3.75 bg-[#615DFA] rounded-[10px] '>
                                 Add Friend
-                                </Link>
                             </button>
+                                </Link>
                             <button className=' text-[14px] text-white font-semibold font-poppins cursor-pointer px-13 py-3.75 bg-[#23D2E2] rounded-[10px] '>Send Message</button>
                         </div>
 
