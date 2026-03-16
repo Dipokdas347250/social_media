@@ -13,7 +13,7 @@ const NewsAbout_me = () => {
    <>
    <div className="">
    <div className="p-6 bg-white rounded-[10px]">
-        <Link to="/About_meRoute">
+        <Link to="/About_me">
         <div className="flex justify-between items-center">
             <h3 className='text-[14px] text-[#3E3F5E] font-bold font-poppins '>About me</h3>
             <BsThreeDots className=' cursor-pointer'/>

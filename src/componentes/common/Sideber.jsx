@@ -15,55 +15,15 @@ const Sidebar = () => {
 
 
 
-  // const linkStyle =
-  //   "flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300 hover:bg-white hover:text-black";
-
-  // const activeStyle = "bg-white text-black shadow-lg";
 
   return (
     <>
 
       <section className="h-screen  bg-white shadow fixed w-[20%]  ">
 
-        {/* <ul className="space-y-4 text-white text-lg font-medium">
+      
+         
 
-        <li >
-          <Link
-            to="/"
-            className={({ isActive }) =>
-              `${linkStyle} ${isActive ? activeStyle : ""}`
-            }
-          >
-            <FaHome />
-            Home
-          </Link>
-        </li>
-
-        <li >
-          <Link
-            to="/about"
-            className={({ isActive }) =>
-              `${linkStyle} ${isActive ? activeStyle : ""}`
-            }
-          >
-            <FaUser />
-            About
-          </Link>
-        </li>
-
-        <li>
-          <Link
-            to="/service"
-            className={({ isActive }) =>
-              `${linkStyle} ${isActive ? activeStyle : ""}`
-            }
-          >
-            <FaServicestack />
-            Service
-          </Link>
-        </li>
-
-      </ul> */}
         <div className="">
           <div className="w-full h-18.75 bg-[#45437F] pt-4">
 
@@ -103,7 +63,10 @@ const Sidebar = () => {
             </Link>
             <li className="flex items-center gap-7.5 py-4 px-5 rounded-[10px] text-[14px] text-tertiary font-semibold font-poppins bg-white duration-300 ease-in-out hover:bg-[#23D2E2] hover:text-white focus:bg-[#23D2E2] focus:text-white cursor-pointer "><FaLayerGroup className="text-[20px]" /> Groups</li>
             <li className="flex items-center gap-7.5 py-4 px-5 rounded-[10px] text-[14px] text-tertiary font-semibold font-poppins bg-white duration-300 ease-in-out hover:bg-[#23D2E2] hover:text-white focus:bg-[#23D2E2] focus:text-white cursor-pointer "><HiCamera className="text-[20px]" /> Photos</li>
+            <Link to="/Add_friend">
+            
             <li className="flex items-center gap-7.5 py-4 px-5 rounded-[10px] text-[14px] text-tertiary font-semibold font-poppins bg-white duration-300 ease-in-out hover:bg-[#23D2E2] hover:text-white focus:bg-[#23D2E2] focus:text-white cursor-pointer "><FaUserGroup className="text-[20px]" /> Friends</li>
+            </Link>
             <li className="flex items-center gap-7.5 py-4 px-5 rounded-[10px] text-[14px] text-tertiary font-semibold font-poppins bg-white duration-300 ease-in-out hover:bg-[#23D2E2] hover:text-white focus:bg-[#23D2E2] focus:text-white cursor-pointer "><FaHandsAslInterpreting className="text-[20px]" /> Friends Request</li>
             <li className="flex items-center gap-7.5 py-4 px-5 rounded-[10px] text-[14px] text-tertiary font-semibold font-poppins bg-white duration-300 ease-in-out hover:bg-[#23D2E2] hover:text-white focus:bg-[#23D2E2] focus:text-white cursor-pointer "><FaSignInAlt className="text-[20px]" /> Logout</li>
           </ul>
