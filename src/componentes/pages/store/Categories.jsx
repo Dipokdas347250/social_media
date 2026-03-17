@@ -1,6 +1,8 @@
 import React from 'react'
 import cart from "../../../assets/cart.png"
 import { Link } from 'react-router'
+import { IoIosArrowBack ,IoIosArrowForward } from "react-icons/io";
+
 
 const Categories = () => {
     return (
@@ -282,6 +284,20 @@ const Categories = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="flex justify-between mt-10 mb-27">
+                <h1></h1>
+                <ul className='flex gap-5 items-center py-5.25 px-6.25 bg-white rounded-[15px]'>
+                    <li className='text-[20px] text-[#3E3F5E] font-bold font-poppins cursor-pointer'><IoIosArrowBack/></li>
+                    <li className='text-[14px] text-[#23D2E2] font-medium font-poppins cursor-pointer'>01</li>
+                    <li className='text-[14px] text-[#3E3F5E] font-medium font-poppins cursor-pointer'>02</li>
+                    <li className='text-[14px] text-[#3E3F5E] font-medium font-poppins cursor-pointer'>03</li>
+                    <li className='text-[14px] text-[#3E3F5E] font-medium font-poppins cursor-pointer'>04</li>
+                    <li className='text-[14px] text-[#3E3F5E] font-medium font-poppins cursor-pointer'>05</li>
+                    <li className='text-[14px] text-[#3E3F5E] font-medium font-poppins cursor-pointer'>06</li>
+                    <li className='text-[20px] text-[#3E3F5E] font-bold font-poppins cursor-pointer'><IoIosArrowForward/></li>
+                </ul>
             </div>
         </>
     )
