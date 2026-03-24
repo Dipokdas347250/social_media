@@ -2,6 +2,7 @@ import React from 'react'
 import { FaSearch, FaStar } from "react-icons/fa";
 import cart from "../../../assets/cart.png"
 import { IoIosArrowBack ,IoIosArrowForward } from "react-icons/io";
+import { Link } from 'react-router';
 
 
 
@@ -160,6 +161,8 @@ const Product_Details = () => {
         </div>
         <div className="w-[77%]">
           <div className=" grid grid-cols-3 gap-5 ">
+            <Link to="/Cart">
+            
             <div className="bg-white rounded-[20px] relative">
               <div className="py-1.5 px-6 bg-white rounded-full shadow inline-block absolute bottom-1/2 right-3.5">
                 <h3 className='text-[14px] text-primary font-bold font-poppins'>$12</h3>
@@ -181,6 +184,7 @@ const Product_Details = () => {
                 <button className='w-full text-[13px] text-white font-semibold font-poppins bg-[#23D2E2] py-2.5 rounded-br-[10px] cursor-pointer'>Wishlist</button>
               </div>
             </div>
+            </Link>
             <div className="bg-white rounded-[20px] relative">
               <div className="py-1.5 px-6 bg-white rounded-full shadow inline-block absolute bottom-1/2 right-3.5">
                 <h3 className='text-[14px] text-primary font-bold font-poppins'>$12</h3>
