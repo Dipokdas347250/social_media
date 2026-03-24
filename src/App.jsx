@@ -10,6 +10,7 @@ import Product from './componentes/Product_route/Product'
 import Cart from './componentes/cart_route/Cart'
 import Checkout from './componentes/checkout_route/Checkout'
 import Order from './componentes/order_route/Order'
+import Product_Items from './componentes/product_Items_route/Product_Items'
 
 
 
@@ -24,6 +25,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='/Store' element={<Store/>}></Route>
     <Route path='/Product' element={<Product/>}></Route>
     <Route path='/Cart' element={<Cart/>}></Route>
+    <Route path='/Product_Items' element={<Product_Items/>}></Route>
     <Route path='/Checkout' element={<Checkout/>}></Route>
     <Route path='/Order' element={<Order/>}></Route>
 

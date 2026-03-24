@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import { IoIosArrowBack ,IoIosArrowForward } from "react-icons/io";
 
 
+
 const Categories = () => {
     return (
         <>
