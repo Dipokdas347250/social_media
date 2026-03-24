@@ -87,7 +87,7 @@ const Checkout_Details = () => {
                                 <input type="radio" />
                             <h3 className='text-[12px] text-[#181828] font-semibold font-poppins'>Paypal</h3>
                             </div>
-                            <p className='text-[11px] text-[#AFB0C0] font-medium font-poppins mt-2'>Pay with your paypal balance or connected bank account it’s quick and really secure.</p>
+                            <p className='text-[11px] text-[#AFB0C0] font-medium font-poppins mt-2'>Pay with your paypal balance or connected bank account its quick and really secure.</p>
                             <div className="flex items-center gap-2 mt-3">
                                 <input type="radio" />
                             <h3 className='text-[12px] text-[#181828] font-semibold font-poppins'>Credit or Debit card</h3>
