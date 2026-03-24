@@ -3,6 +3,7 @@ import cart0 from "../../../assets/cart0.png"
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
+import { Link } from 'react-router';
 
 
 const Add_To_Cart = () => {
@@ -155,9 +156,12 @@ const Add_To_Cart = () => {
           <h5 className='text-[12px] text-black font-medium font-poppins'><span className='text-[#23D2E2]'>$</span>39.00</h5>
         </div>
 
-        <div className=" space-y-2.5 mt-13">
+        <div className="  mt-13">
+          <Link to="/Checkout">
+          
           <button className='py-4 bg-[#23D2E2] border border-[#23D2E2] rounded-[15px] w-full text-[12px] text-white font-medium font-poppins cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-[#AFB0C0] hover:border hover:border-[#AFB0C0] '>Proccecd to checkout</button>
-          <button className='py-4 bg-white border border-[#AFB0C0] rounded-[15px] w-full text-[12px] text-[#AFB0C0] font-medium font-poppins cursor-pointer duration-300 ease-in-out hover:bg-[#23D2E2] hover:text-white hover:border hover:border-[#23D2E2] '>Update cart</button>
+          </Link>
+          <button className=' mt-2.5 py-4 bg-white border border-[#AFB0C0] rounded-[15px] w-full text-[12px] text-[#AFB0C0] font-medium font-poppins cursor-pointer duration-300 ease-in-out hover:bg-[#23D2E2] hover:text-white hover:border hover:border-[#23D2E2] '>Update cart</button>
         </div>
       </div>
     </div>
