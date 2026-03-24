@@ -26,8 +26,9 @@ const Add_To_Cart = () => {
     </div>
    </div>
    
-  <div className=" space-y-6 mt-2.5">
-    <div className="py-5 px-7 bg-white rounded-[15px] w-[77%]">
+  <div className="flex  gap-4">
+    <div className=" space-y-6 mt-2.5 w-[77%]">
+    <div className="py-5 px-7 bg-white rounded-[15px] ">
      <div className="flex items-center ">
     <div className="w-[40%]">
     <div className="flex items-center gap-5.5">
@@ -44,8 +45,8 @@ const Add_To_Cart = () => {
       <div className="flex items-center pl-11 py-1 pr-2  border border-[#D9D9D9] rounded-[15px] gap-4">
         <h2 className='text-[17px] text-[#3E3F5E] font-medium font-poppins'>1</h2>
         <div className=" space-y-3">
-          <MdKeyboardArrowUp/>
-          <MdKeyboardArrowDown/>
+          <MdKeyboardArrowUp className=' cursor-pointer'/>
+          <MdKeyboardArrowDown className=' cursor-pointer'/>
         </div>
       </div>
       <div className="">
@@ -58,7 +59,7 @@ const Add_To_Cart = () => {
     </div>
    </div>
   </div>
-    <div className="py-5 px-7 bg-white rounded-[15px] w-[77%]">
+    <div className="py-5 px-7 bg-white rounded-[15px] ">
      <div className="flex items-center ">
     <div className="w-[40%]">
     <div className="flex items-center gap-5.5">
@@ -75,8 +76,8 @@ const Add_To_Cart = () => {
       <div className="flex items-center pl-11 py-1 pr-2  border border-[#D9D9D9] rounded-[15px] gap-4">
         <h2 className='text-[17px] text-[#3E3F5E] font-medium font-poppins'>1</h2>
         <div className=" space-y-3">
-          <MdKeyboardArrowUp/>
-          <MdKeyboardArrowDown/>
+          <MdKeyboardArrowUp className=' cursor-pointer'/>
+          <MdKeyboardArrowDown className=' cursor-pointer'/>
         </div>
       </div>
       <div className="">
@@ -89,7 +90,7 @@ const Add_To_Cart = () => {
     </div>
    </div>
   </div>
-    <div className="py-5 px-7 bg-white rounded-[15px] w-[77%]">
+    <div className="py-5 px-7 bg-white rounded-[15px] ">
      <div className="flex items-center ">
     <div className="w-[40%]">
     <div className="flex items-center gap-5.5">
@@ -106,8 +107,8 @@ const Add_To_Cart = () => {
       <div className="flex items-center pl-11 py-1 pr-2  border border-[#D9D9D9] rounded-[15px] gap-4">
         <h2 className='text-[17px] text-[#3E3F5E] font-medium font-poppins'>1</h2>
         <div className=" space-y-3">
-          <MdKeyboardArrowUp/>
-          <MdKeyboardArrowDown/>
+          <MdKeyboardArrowUp className=' cursor-pointer'/>
+          <MdKeyboardArrowDown className=' cursor-pointer'/>
         </div>
       </div>
       <div className="">
@@ -120,7 +121,7 @@ const Add_To_Cart = () => {
     </div>
    </div>
   </div>
-  <div className="py-5 px-7 bg-white rounded-[15px] w-[77%]">
+  <div className="py-5 px-7 bg-white rounded-[15px] ">
       <div className=" flex gap-12.5 ">
         <p className='w-[45%] text-[17px] text-[#AFB0C0] font-medium font-poppins'>If you have promotional or a discount code, please enter it right here to redeem it.</p>
       <div className="w-[50%]">
@@ -134,6 +135,32 @@ const Add_To_Cart = () => {
         </div>
       </div>
       </div>
+  </div>
+  </div>
+  <div className="w-[23%] mt-2.5">
+    <div className="py-7.5 px-6.5 bg-white rounded-[15px]">
+      <h4 className='text-[17px] text-black font-medium font-poppins'>Order totals</h4>
+      <h2 className='text-[49px] text-black font-medium font-poppins text-center mt-4'><span className='text-[#23D2E2]'>$</span>39.00</h2>
+      <div className=" space-y-2.75 mt-12.5">
+        <div className="flex justify-between items-center">
+          <h4 className='text-[12px] text-[#AFB0C0] font-medium font-poppins'>Cart(3)</h4>
+          <h5 className='text-[12px] text-black font-medium font-poppins'><span className='text-[#23D2E2]'>$</span>44.00</h5>
+        </div>
+        <div className="flex justify-between items-center">
+          <h4 className='text-[12px] text-[#AFB0C0] font-medium font-poppins'>Code</h4>
+          <h5 className='text-[12px] text-black font-medium font-poppins'>-<span className='text-[#23D2E2]'>$</span>15.00</h5>
+        </div>
+        <div className="flex justify-between items-center">
+          <h4 className='text-[12px] text-[#AFB0C0] font-medium font-poppins'>Total</h4>
+          <h5 className='text-[12px] text-black font-medium font-poppins'><span className='text-[#23D2E2]'>$</span>39.00</h5>
+        </div>
+
+        <div className=" space-y-2.5 mt-13">
+          <button className='py-4 bg-[#23D2E2] border border-[#23D2E2] rounded-[15px] w-full text-[12px] text-white font-medium font-poppins cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-[#AFB0C0] hover:border hover:border-[#AFB0C0] '>Proccecd to checkout</button>
+          <button className='py-4 bg-white border border-[#AFB0C0] rounded-[15px] w-full text-[12px] text-[#AFB0C0] font-medium font-poppins cursor-pointer duration-300 ease-in-out hover:bg-[#23D2E2] hover:text-white hover:border hover:border-[#23D2E2] '>Update cart</button>
+        </div>
+      </div>
+    </div>
   </div>
   </div>
    </>
