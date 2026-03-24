@@ -3,6 +3,7 @@ import { FaArrowRight,FaArrowLeft  } from "react-icons/fa";
 import rec from "../../../assets/rec.png"
 import rect0 from "../../../assets/rect0.png"
 import { FaStar } from "react-icons/fa";
+import { Link } from 'react-router';
 
 
 const Product_Items_Details = () => {
@@ -51,7 +52,7 @@ const Product_Items_Details = () => {
                         </div>
                     </div>
                  </div>
-                 <button className='py-3 bg-[#23D2E2] w-full rounded-[15px] text-[17px] text-white font-medium font-poppins mt-10'>Add to your cart</button>
+                 <button className='py-3 bg-[#23D2E2] w-full rounded-[15px] text-[17px] text-white font-medium font-poppins mt-10'><Link to="/Cart">Add to your cart</Link></button>
             </div>
         </div>
       </div>
