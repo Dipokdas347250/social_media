@@ -1,59 +1,116 @@
 import React from 'react'
-import { FaArrowRight,FaArrowLeft  } from "react-icons/fa";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import rec from "../../../assets/rec.png"
 import rect0 from "../../../assets/rect0.png"
 import { FaStar } from "react-icons/fa";
 import { Link } from 'react-router';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import "react-tabs/style/react-tabs.css";
 
 
 const Product_Items_Details = () => {
   return (
     <>
-    <div className=" mt-6">
+      <div className=" mt-6">
         <h3 className='text-[14px] text-[#AFB0C0] font-normal font-poppins'>BROWSE PRODUTS</h3>
         <h2 className='text-[24px] text-[#24234B] font-medium font-poppins'>Digital Items</h2>
       </div>
 
       <div className="flex gap-2.5 mt-6">
         <div className=" space-y-1.5 mt-42.5">
-           <div className="py-2 px-4.25 bg-white flex justify-center rounded-[7px] text-[#23D2E2]">
-             <FaArrowRight/>
-           </div>
-            <div className="p-1.5 bg-white rounded-[10px] space-y-1">
-                <img src={rec} alt="" />
-                <img src={rec} alt="" />
-                <img src={rec} alt="" />
-            </div>
-            <div className="py-2 px-4.25 bg-white flex justify-center rounded-[7px] text-[#23D2E2]">
+          <div className="py-2 px-4.25 bg-white flex justify-center rounded-[7px] text-[#23D2E2]">
+            <FaArrowRight />
+          </div>
+          <div className="p-1.5 bg-white rounded-[10px] space-y-1">
+            <img src={rec} alt="" />
+            <img src={rec} alt="" />
+            <img src={rec} alt="" />
+          </div>
+          <div className="py-2 px-4.25 bg-white flex justify-center rounded-[7px] text-[#23D2E2]">
 
-            <FaArrowLeft/>
-            </div>
+            <FaArrowLeft />
+          </div>
         </div>
         <div className="w-[70%]">
-            <img className='w-full' src={rect0} alt="" />
+          <img className='w-full' src={rect0} alt="" />
+          <div className="mt-25">
+            <Tabs>
+              <TabList className="flex justify-center border-b  border-[#D9D9D9] bg-white rounded-t-[10px]">
+                <Tab
+                  selectedClassName=" bg-[#615DFA] text-white"
+                  className=" w-[50%] flex justify-center items-center py-5 cursor-pointer outline-none text-[12px] text-black font-bold font-poppins gap-4 rounded-tl-[10px] "> Description</Tab>
+                <Tab
+                  selectedClassName=" bg-[#615DFA] text-white"
+                  className=" w-[50%] flex justify-center items-center py-5 cursor-pointer outline-none text-[12px] text-black font-bold font-poppins gap-4   ">Comments</Tab>
+                <Tab
+                  selectedClassName=" bg-[#615DFA] text-white"
+                  className=" w-[50%] flex justify-center items-center py-5 cursor-pointer outline-none text-[12px] text-black font-bold font-poppins gap-4 rounded-tr-[10px]  ">Review</Tab>
+
+              </TabList>
+                 
+
+              <TabPanel>
+                 <div className="pt-15 px-5 pb-43.5 bg-white rounded-b-[10px]">
+                    <h3 className='text-[20px] text-[#181828] font-bold font-poppins'>The Best eSports and Gaming Magazine Template!</h3>
+                    <p className='text-[16px] text-[#474747] font-medium font-poppins mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+
+                    <p className='text-[16px] text-[#474747] font-medium font-poppins mt-10'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <h3 className='text-[20px] text-[#181828] font-bold font-poppins mt-7.5'>356+ HTML Elements Library included</h3>
+                    <p className='text-[16px] text-[#474747] font-medium font-poppins mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+                  </div>
+                
+              </TabPanel>
+              <TabPanel>
+                 <div className="pt-15 px-5 pb-43.5 bg-white rounded-b-[10px]">
+                    <h3 className='text-[20px] text-[#181828] font-bold font-poppins'>The Best eSports and Gaming Magazine Template!</h3>
+                    <p className='text-[16px] text-[#474747] font-medium font-poppins mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+
+                    <p className='text-[16px] text-[#474747] font-medium font-poppins mt-10'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <h3 className='text-[20px] text-[#181828] font-bold font-poppins mt-7.5'>356+ HTML Elements Library included</h3>
+                    <p className='text-[16px] text-[#474747] font-medium font-poppins mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+                  </div>
+                
+              </TabPanel>
+              <TabPanel>
+                 <div className="pt-15 px-5 pb-43.5 bg-white rounded-b-[10px]">
+                    <h3 className='text-[20px] text-[#181828] font-bold font-poppins'>The Best eSports and Gaming Magazine Template!</h3>
+                    <p className='text-[16px] text-[#474747] font-medium font-poppins mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+
+                    <p className='text-[16px] text-[#474747] font-medium font-poppins mt-10'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <h3 className='text-[20px] text-[#181828] font-bold font-poppins mt-7.5'>356+ HTML Elements Library included</h3>
+                    <p className='text-[16px] text-[#474747] font-medium font-poppins mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo consequat. Duis aute irure dolor in henderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+                  </div>
+                
+              </TabPanel>
+             
+            </Tabs>
+          </div>
         </div>
         <div className="w-[30%]">
-            <div className="p-7.5 bg-white rounded-[15px]">
-                 <h2 className='text-[49px] text-black font-medium font-poppins text-center'><span className='text-[#23D2E2]'>$</span>39.00</h2>
+          <div className="p-7.5 bg-white rounded-[15px]">
+            <h2 className='text-[49px] text-black font-medium font-poppins text-center'><span className='text-[#23D2E2]'>$</span>39.00</h2>
 
-                 <div className="flex justify-between items-center mt-8">
-                    <div className="border-r border-[#AFB0C0] pr-25">
-                        <h3 className='text-[24px] text-[#181828] font-semibold font-poppins'>1,320</h3>
-                        <h4 className='text-[14px] text-[#AFB0C0] font-medium font-poppins text-center'>Sales</h4>
-                    </div>
-                    <div className="">
-                        <h3 className='text-[24px] text-[#181828] font-semibold font-poppins text-center'>4.2/5</h3>
-                        <div className="flex justify-center text-[#FCE730] ">
-                            <FaStar/>
-                            <FaStar/>
-                            <FaStar/>
-                            <FaStar/>
-                            <FaStar/>
-                        </div>
-                    </div>
-                 </div>
-                 <button className='py-3 bg-[#23D2E2] w-full rounded-[15px] text-[17px] text-white font-medium font-poppins mt-10'><Link to="/Cart">Add to your cart</Link></button>
+            <div className="flex justify-between items-center mt-8">
+              <div className="border-r border-[#AFB0C0] pr-25">
+                <h3 className='text-[24px] text-[#181828] font-semibold font-poppins'>1,320</h3>
+                <h4 className='text-[14px] text-[#AFB0C0] font-medium font-poppins text-center'>Sales</h4>
+              </div>
+              <div className="">
+                <h3 className='text-[24px] text-[#181828] font-semibold font-poppins text-center'>4.2/5</h3>
+                <div className="flex justify-center text-[#FCE730] ">
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                </div>
+              </div>
             </div>
+            <button className='py-3 bg-[#23D2E2] w-full rounded-[15px] text-[17px] text-white font-medium font-poppins mt-10'><Link to="/Cart">Add to your cart</Link></button>
+          </div>
         </div>
       </div>
     </>
